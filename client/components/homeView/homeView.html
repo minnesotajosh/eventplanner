@@ -1,0 +1,258 @@
+<template name="homeView">
+    <div class="modal-dialog groups-filter" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title pull-left">Groups</h4>
+                <button class="btn btn-primary pull-right">+</button>
+            </div>
+            <div class="modal-body">
+
+
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="filters-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                    Filters</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="search" placeholder="Search for group">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label for="time-from">From:</label>
+                                                <select class="form-control">
+                                                    <option value="0">12:00 am</option>
+                                                    <option value="1">1:00 am</option>
+                                                    <option value="2">2:00 am</option>
+                                                    <option value="3">3:00 am</option>
+                                                    <option value="4">4:00 am</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label for="time-to">To:</label>
+                                                <select class="form-control">
+                                                    <option value="0">12:00 am</option>
+                                                    <option value="1">1:00 am</option>
+                                                    <option value="2">2:00 am</option>
+                                                    <option value="3">3:00 am</option>
+                                                    <option value="4">4:00 am</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="days-filter">Days</label>
+                                        <div class="btn-toolbar" role="toolbar" aria-label="...">
+                                            <div class="btn-group" role="group" aria-label="...">
+                                                <button class="btn btn-primary">All</button>
+                                            </div>
+                                            <div class="btn-group" role="group" aria-label="...">
+                                                <button class="btn btn-default">S</button>
+                                                <button class="btn btn-default">M</button>
+                                                <button class="btn btn-default">T</button>
+                                                <button class="btn btn-default">W</button>
+                                                <button class="btn btn-default">T</button>
+                                                <button class="btn btn-default">F</button>
+                                                <button class="btn btn-default">S</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Childcare Available</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Men's</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Women's</label>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="list-group groups">
+                    <a href="" class="list-group-item">
+                        <div class="group-details">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=60%C3%9760&w=60&h=60" alt="" class="group-image">
+                            <div class="group-title">Men's Coffee on Mondays</div>
+                            <div class="group-information">
+                                <div class="group-type">
+                                    <ul>
+                                        <li>
+                                            <div class="mens"></div>
+                                        </li>
+
+                                    </ul>
+                                    <div class="group-meeting-information">
+                                        Monday - 8:00am
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="" class="list-group-item">
+                        <div class="group-details">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=60%C3%9760&w=60&h=60" alt="" class="group-image">
+                            <div class="group-title">Couples Fellowship</div>
+                            <div class="group-information">
+                                <div class="group-type">
+                                    <ul>
+                                        <li>
+                                            <div class="mens"></div>
+                                        </li>
+                                        <li>
+                                            <div class="womens"></div>
+                                        </li>
+                                        <li>
+                                            <div class="childcare"></div>
+                                        </li>
+                                    </ul>
+                                    <div class="group-meeting-information">
+                                        Thursday - 5:00pm
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="" class="list-group-item">
+                        <div class="group-details">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=60%C3%9760&w=60&h=60" alt="" class="group-image">
+                            <div class="group-title">Young Adults</div>
+                            <div class="group-information">
+                                <div class="group-type">
+                                    <ul>
+                                        <li>
+                                            <div class="mens"></div>
+                                        </li>
+                                        <li>
+                                            <div class="womens"></div>
+                                        </li>
+                                    </ul>
+                                    <div class="group-meeting-information">
+                                        Thursday - 7:00pm
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="" class="list-group-item">
+                        <div class="group-details">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=60%C3%9760&w=60&h=60" alt="" class="group-image">
+                            <div class="group-title">Stronger in the word</div>
+                            <div class="group-information">
+                                <div class="group-type">
+                                    <ul>
+                                        <li>
+                                            <div class="mens"></div>
+                                        </li>
+                                        <li>
+                                            <div class="womens"></div>
+                                        </li>
+                                    </ul>
+                                    <div class="group-meeting-information">
+                                        Sunday - 4:00pm
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="" class="list-group-item">
+                        <div class="group-details">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=60%C3%9760&w=60&h=60" alt="" class="group-image">
+                            <div class="group-title">Really long group name that goes onto two lines</div>
+                            <div class="group-information">
+                                <div class="group-type">
+                                    <ul>
+                                        <li>
+                                            <div class="mens"></div>
+                                        </li>
+                                        <li>
+                                            <div class="womens"></div>
+                                        </li>
+                                        <li>
+                                            <div class="childcare"></div>
+                                        </li>
+                                    </ul>
+                                    <div class="group-meeting-information">
+                                        Mondays - 8:00am
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="" class="list-group-item">
+                        <div class="group-details">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=60%C3%9760&w=60&h=60" alt="" class="group-image">
+                            <div class="group-title">Women's Coffee</div>
+                            <div class="group-information">
+                                <div class="group-type">
+                                    <ul>
+                                        <li>
+                                            <div class="womens"></div>
+                                        </li>
+                                        <li>
+                                            <div class="childcare"></div>
+                                        </li>
+                                    </ul>
+                                    <div class="group-meeting-information">
+                                        Mondays - 8:00am
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="" class="list-group-item">
+                        <div class="group-details">
+                            <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=60%C3%9760&w=60&h=60" alt="" class="group-image">
+                            <div class="group-title">Women's Book Club</div>
+                            <div class="group-information">
+                                <div class="group-type">
+                                    <ul>
+                                        <li>
+                                            <div class="womens"></div>
+                                        </li>
+                                        <li>
+                                            <div class="childcare"></div>
+                                        </li>
+                                    </ul>
+                                    <div class="group-meeting-information">
+                                        Mondays - 8:00am
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+</template>
